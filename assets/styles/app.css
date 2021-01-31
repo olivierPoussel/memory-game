@@ -1,9 +1,76 @@
+/* Suppression des marges par défaut de la page 
+   et définition de la largeur et la hauteur de la page
+*/
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
+}
+
+/* Activation du flex pour centrer facilement les éléments contenus dans le body */
+body {
+    display: flex;
+}
+
+#root {
+    background-color: rgba(211, 211, 211, 0.70);
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
 }
 
 h1 {
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    background-color: lightsteelblue;
+    border-spacing: 5px;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    background-color: gray;
+    text-align: center;
+}
+
+td img {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Modification du pointeur de la souris au survol de la carte */
+td:hover {
+    cursor: pointer;
+}
+
+/* Animation de la carte */
+td.card {
+    transition: transform 0.8s;    
+}
+
+/* Animation de la carte */
+td.card.visible {
+    transform: rotateY(180deg);
+}
+
+td p {
+    font-size: 1.8rem;
     text-align: center;
 }

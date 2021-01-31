@@ -1,0 +1,24 @@
+/* Contour de la barre */
+.barre {
+    border: 2px solid black;
+    background-color: transparent;
+    margin: 0px auto;    
+    padding: 0;
+    width: 70%;
+}
+
+/* Contenu de la barre */
+.barre div {
+    color: black;
+    background-color: red;
+    text-align: center;
+    height: 20px;
+}
+
+.timer {
+    margin-top: 10px;
+}
+
+.text-center {
+    text-align: center;
+}

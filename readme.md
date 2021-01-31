@@ -11,13 +11,16 @@ Installer au minimum :
 
 ## Récupération du projet
 ```bash
-git clone <repo>
+git clone https://github.com/olivierPoussel/memory-game.git
 ```
 ## Initialisation du projet
 ```bash
 composer install
 npm install
 npm run build
+php bin/console doctrine:database:create
+php bin/console doctrine:migration:migrate
+php bin/console doctrine:fixtures:load
 ```
 
 ## Démarrer le serveur php

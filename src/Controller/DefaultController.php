@@ -9,6 +9,9 @@ use Symfony\Component\HttpFoundation\Response;
 class DefaultController extends AbstractController
 {
     /**
+     * Route par défaut
+     * Affiche de l'application React
+     * 
      * @Route("/", name="index")
      *
      * @return Response
