@@ -2,7 +2,7 @@ import axios from 'axios';
 /**
  * URL du serveur pour récupérer les meilleurs temps
  */
-const url = "http://localhost:8000/records";
+const url = `${process.env.API_URL}records`;
 
 /**
  * Permet de sauvegarder le meilleur temps sur le serveur
